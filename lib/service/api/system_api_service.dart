@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'dart:developer' as developer;
 
-import 'package:bagel_app/common/utils/api_config.dart';
+import 'package:bagel_app/common/constants/api_config.dart';
 import 'package:bagel_app/data/mock_notes.dart';
 import 'package:bagel_app/models/category.dart';
 import 'package:http/http.dart' as http;

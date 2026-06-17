@@ -3,7 +3,7 @@
 import 'dart:convert';
 import 'dart:developer' as developer;
 
-import 'package:bagel_app/common/utils/api_config.dart';
+import 'package:bagel_app/common/constants/api_config.dart';
 import 'package:bagel_app/models/api_result.dart';
 import 'package:http/http.dart' as http;
 

@@ -2,6 +2,7 @@ import 'dart:developer' as developer;
 
 import 'package:bagel_app/common/constants/local_key_constants.dart';
 import 'package:bagel_app/models/api_result.dart';
+import 'package:bagel_app/pages/register_page.dart';
 import 'package:bagel_app/service/api/auth_api_service.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
@@ -140,16 +141,10 @@ class _LoginPageState extends State<LoginPage> {
 
   /// 点击注册入口
   void _goToRegisterPage() {
-    ScaffoldMessenger.of(
+    Navigator.push(
       context,
-    ).showSnackBar(const SnackBar(content: Text('注册页面下一课做，别急，面团还在发酵 🥯')));
-
-    /// Navigator.push(
-    ///   context,
-    ///   MaterialPageRoute(
-    ///     builder: (context) => const RegisterPage(),
-    ///   ),
-    /// );
+      MaterialPageRoute(builder: (context) => const RegisterPage()),
+    );
   }
 
   @override
